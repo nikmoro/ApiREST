@@ -21,6 +21,16 @@ namespace ApiRest.Controllers
             }
         }
 
+        [HttpGet]
+        public Donacion GetNombreMpio(string mpio)
+        {
+            using (var conexion = new ReforestacionEntities())
+            {
+                var result = (from re in conexion.Donaciones where re.nombre_mpio.Contains(mpio) select re).FirstOrDefault();
+                return result;
+            }
+        }
+
         [HttpPost]
         public bool Insertar(Donacion entidad)
         {
@@ -41,7 +51,6 @@ namespace ApiRest.Controllers
                 {
                     return false;
                 }
-                
             }
         }
     }
