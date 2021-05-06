@@ -7,28 +7,30 @@
 
     <h2>Reforestando los municipios del estado de Chiapas.</h2>
 
-    <p>Da click para mostrar la lista o usa el menú lateral.</p>
+    <p>Da click para mostrar la lista@*o usa el menú lateral*@.</p>
 
     <button class="btn btn-primary"@onclick="GetDonaciones">Ir a la lista</button>
 </div>
 
+<br />
+
 <table class="table">
-    <thead>
+    <thead class="bg-light">
         <tr>
-            <th>Id</th>
-            <th>Nombre del municipio</th>
-            <th>Nombre del árbol</th>
-            <th>Cantidad de árboles</th>
+            <th class="text-center">Id</th>
+            <th class="text-center">Nombre del municipio</th>
+            <th class="text-center">Nombre del árbol</th>
+            <th class="text-center">Cantidad de árboles</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var info in donaciones)
         {
         <tr>
-            <td>@info.id</td>
-            <td>@info.nombre_mpio</td>
-            <td>@info.nombre_arbol</td>
-            <td>@info.cantidad</td>
+            <td class="text-center">@info.id</td>
+            <td class="text-center">@info.nombre_mpio</td>
+            <td class="text-center">@info.nombre_arbol</td>
+            <td class="text-center">@info.cantidad</td>
         </tr>
         }
     </tbody>
