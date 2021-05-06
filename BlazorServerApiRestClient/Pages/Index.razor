@@ -3,13 +3,13 @@
 @inject HttpClient Http;
 
 <div class="text-center">
-    <h1>¡Hola! Bienvenido a programa de reforestación.</h1>
+    <h1>¡Hola! Bienvenido al programa de reforestación.</h1>
 
     <h2>Reforestando los municipios del estado de Chiapas.</h2>
 
-    <p>Da click para mostrar la lista@*o usa el menú lateral*@.</p>
+    <p>Da click para mostrar la lista.</p>
 
-    <button class="btn btn-primary"@onclick="GetDonaciones">Ir a la lista</button>
+    <button class="btn btn-primary"@onclick="GetDonaciones">Ver lista</button>
 </div>
 
 <br />
@@ -35,20 +35,3 @@
         }
     </tbody>
 </table>
-
-@code{
-    List<Donacion> donaciones = new List<Donacion>();
-
-    private async Task GetDonaciones()
-    {
-        donaciones = await Http.GetJsonAsync<List<Donacion>>("http://www.apidonaciones.somee.com/api/Donacion");
-    }
-
-    public class Donacion
-    {
-        public int id { get; set; } = 0;
-        public string nombre_mpio { get; set; } = "";
-        public string nombre_arbol { get; set; } = "";
-        public int cantidad { get; set; } = 0;
-}
-}
