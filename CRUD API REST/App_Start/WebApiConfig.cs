@@ -14,6 +14,9 @@ namespace CRUD_API_REST
             // Rutas de API web
             config.MapHttpAttributeRoutes();
 
+            // Activando CORS
+            config.EnableCors();
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

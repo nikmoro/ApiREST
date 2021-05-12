@@ -9,9 +9,12 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using CRUD_API_REST.Models;
+using System.Web.Http.Cors;
 
 namespace CRUD_API_REST.Controllers
 {
+    [EnableCors(origins: "http://127.0.0.1:5500", headers: "*", methods: "*")]
+
     public class DonacionController : ApiController
     {
         private ModelDonaciones db = new ModelDonaciones();
