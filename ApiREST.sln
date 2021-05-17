@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD API REST", "CRUD API REST\CRUD API REST.csproj", "{DA302204-7212-40A0-A45A-825BC4B2902C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases", "..\CP 5\CP5\Clases\Clases.csproj", "{D5AA83A4-88C9-4B9C-8B48-0822E4AF974A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{DA302204-7212-40A0-A45A-825BC4B2902C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA302204-7212-40A0-A45A-825BC4B2902C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA302204-7212-40A0-A45A-825BC4B2902C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5AA83A4-88C9-4B9C-8B48-0822E4AF974A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5AA83A4-88C9-4B9C-8B48-0822E4AF974A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5AA83A4-88C9-4B9C-8B48-0822E4AF974A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5AA83A4-88C9-4B9C-8B48-0822E4AF974A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
